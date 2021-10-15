@@ -1,0 +1,156 @@
+<!--...Film Production Website....-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hum Film Production</title>
+    <!-- <link rel="stylesheet" href="../CSS/filmprod.css"> -->
+    <link href="../im/my logo.png" rel="icon">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: verdana;
+            background: #fefaf7;
+            background-size: cover;
+            background-attachment: relative;
+        }
+
+        header {
+            background-color: black;
+            width: 100%;
+            position: absolute;
+            color: white;
+        }
+
+        .logo {
+            margin-top: 20px;
+            left: 5%;
+            margin-left: 20px
+        }
+
+        header h2 {
+            margin-top: 20px;
+            left: 10%;
+            position: absolute;
+            color: #f209b7;
+        }
+
+        header {
+            height: 15vh;
+        }
+
+        .nam {
+            position: relative;
+            width: 95%;
+        }
+
+        .nam a {
+            position: relative;
+            left: 45%;
+            top: -15px;
+            color: white;
+            text-decoration: none;
+            margin-right: 18px;
+            font-size: 15px
+        }
+
+        .slider-box {
+            width: 100%;
+            height: 80vh;
+            margin-bottom: -170px;
+            overflow: hidden;
+            padding: 0;
+            z-index: 1;
+            margin: 8px;
+            box-shadow: 2px 3px 14px #66665e;
+
+        }
+
+        #slider {
+            width: 100%;
+            position: relative;
+            display: inline-flex;
+            transition: 0.7s;
+            animation: 10s slider infinite;
+        }
+
+        #slider img {
+            width: 100%;
+            height: 500px;
+            float: left;
+        }
+
+        @keyframes slider {
+            0% {
+                left: 0;
+            }
+
+            20% {
+                left: -5px;
+            }
+
+            25% {
+                left: -49%;
+            }
+
+            45% {
+                left: -75%;
+            }
+
+            50% {
+                left: -135%;
+            }
+
+            70% {
+                left: -164%;
+            }
+
+            75% {
+                right: 78%;
+            }
+
+            95% {
+                right: 88%;
+            }
+
+            100% {
+                right: 104%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>HUM Film<br>Production</h2>
+        <img class="logo" src="../im/logo_2.png" width="5%" height="40%">
+        <div class="nam">
+            <a href="">PROJECTS</a>
+            <a href="">SERVICES</a>
+            <a href="">PRESS ROOM</a>
+            <a href="">BLOG</a>
+            <a href="">MAP</a>
+            <a href="">ABOUT</a>
+            <a href="">CONTACT US</a>
+        </div>
+
+        <div class="slider-box">
+            <div id="slider">
+                <img src="./img/camera.jpeg">
+                <img src="./img/camera_2.jpg">
+                <img src="./img/camera_3.jpg">
+                <img src="./img/camera_4.jpg">
+                <img src="./img/camera_5.jpg">
+                <img src="./img/camera_6.jpg">
+            </div>
+        </div><br><br>
+    </header>
+</body>
+
+</html>
